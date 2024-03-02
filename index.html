@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <style>
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td,
+  th {
+    border: 3px solid #000000;
+    text-align: center;
+    padding: 8px;
+  }
+
+  tr {
+    background-color: #968484;
+    text-align: center;
+  }
+  </style>
+
+  <body style="background-color: lightcoral;">
+
+<h2 style="text-align: center;">Grades</h2>
+
+    <div>
+      <table>
+        <tr>
+          <th>Subject</th>
+          <th>Grade</th>
+        </tr>
+        <tr>
+          <td>English</td>
+          <td>99</td>
+        </tr>
+        <tr>
+          <td>Science</td>
+          <td>98</td>
+        </tr>
+        <tr>
+          <td>Math</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>Filipino</td>
+          <td>83</td>
+        </tr>
+        <tr>
+          <td>History</td>
+          <td>77</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <p id="average">Average: </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <script>
+
+        let x = 99 + 98 + 80 + 83 + 77;
+        let average = x / 5;
+        document.getElementById("average").innerHTML = "Average: " + average;
+      </script>
+
+    <script src="jss.js"></script>
+  </body>
+</html>
